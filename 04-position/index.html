@@ -16,7 +16,8 @@
         height: 400%;
         background-color: red;
       }
-      /*#boxOne {
+      /*Position
+      #boxOne {
         height: 300px;
         width: 300px;
         background-color: yellow;
@@ -28,10 +29,27 @@
         background-color: green;
         position: fixed;
       }*/
+      .abs-box {
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        position: relative;
+      }
+      .abs-child {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
     </style>
   </head>
   <body>
-    <--
+    <div class="abs-box">
+      <div class="abs-child"></div>
+    </div>
+    <!--Position
     <div id="boxOne">
       <div class="box-child"></div>
     </div>
